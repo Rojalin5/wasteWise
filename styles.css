@@ -7,7 +7,12 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("https://images.unsplash.com/photo-1510251197878-a2e6d2cb590c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* topbar */
@@ -15,7 +20,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 40px;
+    padding: 20px 40px;
     background-color: #0062cc;
     color: white;
     position: sticky;
@@ -60,24 +65,12 @@ body {
 
 /* hero section */
 .hero {
-    background-image: url("https://images.unsplash.com/photo-1510251197878-a2e6d2cb590c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") ;
-    background-size: cover;
-    background-position: center;
     height: 100vh;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
     background: rgba(0, 0, 0, 0.4);
 }
 
@@ -88,8 +81,8 @@ body {
     padding: 40px;
     text-align: left;
     margin-right: 35%;
-  }
-  
+}
+
 
 .hero-content h1 {
     font-size: 60px;
@@ -114,4 +107,58 @@ body {
 
 .btn:hover {
     background-color: #004bb5;
+}
+
+/* About Us */
+.about-us {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 70px 160px;
+}
+
+.about-content-left {
+    flex: 1;
+    padding-right: 70px;
+    text-align: left;
+    max-width: 60%;
+}
+
+.about-content-left h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0062cc;
+}
+
+.about-content-left p {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-image-right {
+    flex: 1;
+    max-width: 40%;
+    background-image: url("https://images.unsplash.com/photo-1620509048004-415ebb9e2755?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.contact-btn {
+    color: #0062cc;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 3px;
+    border: 2px solid #0062cc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+.contact-btn:hover {
+    background-color: #0062cc;
+    color: white;
 }
