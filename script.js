@@ -8,7 +8,7 @@ const elementsToAnimate = document.querySelectorAll('.fade-in');
         }
       });
     }, {
-      threshold: 0.30 
+      threshold: 0.15
     });
 
     elementsToAnimate.forEach((element) => {

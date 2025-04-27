@@ -137,7 +137,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    color:#0062cc;
+    color:#333;
 }
 
 .about-content-left p {
@@ -195,4 +195,144 @@ body {
 .fade-in.in-viewport {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Features Section */
+.features-section {
+    padding: 35px 150px;
+    text-align: center;
+    background-color: #f7f7f7; /* Light background */
+}
+
+.features-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Keep transition */
+}
+
+.feature-card:hover {
+    transform: rotateX(5deg) rotateY(5deg) scale(1.05); /* Subtle rotation and scale */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.feature-card img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0062cc;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+ 
+.our-services-clean {
+    padding: 50px 200px;
+    background-color:white;
+    text-align: center;
+}
+
+.services-heading {
+    font-size: 3.5em; /* Very large text */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services-description {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.book-now-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #0062cc;
+    border-radius: 25px;
+    color:#0062cc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.book-now-button:hover {
+    background-color: #0062cc;
+    color: white;
+}
+
+.services-grid-clean {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Force two columns */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-card-clean {
+    background-color: white;
+    border: 1px solid #0062cc;
+    border-radius: 40px;
+    padding: 50px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-card-clean:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon-clean {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    /* You can replace the background-color with an actual icon using background-image */
+}
+
+.service-card-clean h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000080; /* Dark blue text */
+    margin-bottom: 10px;
+}
+
+.service-card-clean p {
+    font-size: 1em;
+    color: #000080; /* Dark blue text */
+    line-height: 1.6;
 }
