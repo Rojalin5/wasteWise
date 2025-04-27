@@ -201,7 +201,7 @@ body {
 .features-section {
     padding: 35px 150px;
     text-align: center;
-    background-color: #f7f7f7; /* Light background */
+    background-color: #EFF5FB; /* Light background */
 }
 
 .features-section h2 {
@@ -254,7 +254,7 @@ body {
 }
  
 .our-services-clean {
-    padding: 50px 200px;
+    padding: 25px 200px;
     background-color:white;
     text-align: center;
 }
@@ -279,7 +279,7 @@ body {
 .book-now-button {
     display: inline-block;
     padding: 15px 30px;
-    border: 2px solid #0062cc;
+    border: 2px solid#0062cc;
     border-radius: 25px;
     color:#0062cc;
     text-decoration: none;
@@ -299,11 +299,11 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Force two columns */
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .service-card-clean {
-    background-color: white;
+    background-color:	#EFF5FB    ;
     border: 1px solid #0062cc;
     border-radius: 40px;
     padding: 50px;
@@ -327,12 +327,12 @@ body {
 .service-card-clean h3 {
     font-size: 1.5em;
     font-weight: bold;
-    color: #000080; /* Dark blue text */
+    color: #0062cc; /* Dark blue text */
     margin-bottom: 10px;
 }
 
 .service-card-clean p {
     font-size: 1em;
-    color: #000080; /* Dark blue text */
+    color: #555; /* Dark blue text */
     line-height: 1.6;
 }
