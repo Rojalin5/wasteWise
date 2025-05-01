@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #eef2ff;
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+:root {
+    --scroll-animation-delay: 0.1s;
+}
+/* topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: #0062cc;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0%;  
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+/* HERO SECTION WITH BACKGROUND IMAGE AND CENTERED TEXT */
+.hero-section {
+    background-image: url(./hero.jpeg); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    color: #fff;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darken background */
+}
+
+.hero-section .hero-container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .hero-text {
+    text-align: center;
+}
+
+.hero-section .hero-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+.guide-btn {
+    background-color: #0062cc;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.guide-btn:hover{
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+/* RESOURCE DESCRIPTION SECTION WITH LEFT-ALIGNED TEXT AND IMAGE TO THE RIGHT*/
+.resource-info-section {
+  background-color: white;
+  color: #333;
+  padding: 40px 20px;
+}
+
+.resource-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.resource-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.resource-text h2 {
+  font-size: 36px;
+  color: #0062cc;
+  margin-bottom: 20px;
+}
+
+.resource-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.resource-btn {
+  background-color: #0062cc;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resource-btn:hover {
+  background-color: #004a99;
+}
+
+.resource-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.resource-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* guideline section */
+/* Container for the entire slider */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    padding: 20px 0;
+  }
+  
+  /* Optional heading styling */
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Horizontal sliding track */
+  .card-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 20px;
+    padding: 0 40px; /* Space on sides */
+  }
+  
+  /* Individual card */
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    padding-bottom: 15px;
+  }
+  
+  /* Card image */
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+  
+  /* Card content */
+  .card-body {
+    padding: 16px;
+  }
+  
+  /* Tag label */
+  .tag {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 13px;
+    border-radius: 12px;
+    background: #ecefff;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Card title */
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  /* Card description */
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Transparent arrow buttons */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    transition: color 0.3s ease;
+  }
+  
+  /* Arrow hover effect */
+  .arrow:hover {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Arrow disabled state */
+  .arrow:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  
+  /* Left arrow position */
+  .arrow.left {
+    left: 10px;
+  }
+  
+  /* Right arrow position */
+  .arrow.right {
+    right: 10px;
+  }
+  
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
