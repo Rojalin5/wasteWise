@@ -72,7 +72,9 @@ body {
     position: relative;
     color: #fff;
 }
-
+.hero-section h1{
+    color: white;
+}
 .hero-section::after {
     content: '';
     position: absolute;
