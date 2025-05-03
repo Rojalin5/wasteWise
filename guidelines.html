@@ -3,8 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Waste Management Guidelines - Card Slider</title>
     <link rel="stylesheet" href="Styles/guidelines.css" class="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
@@ -20,76 +24,184 @@
             </ul>
         </nav>
     </header>
+    <section class="hero fade-in">
+        <div class="hero-content">
+          <h1 class="fade-in" style="transition-delay: 0.2s;">Sustainability Starts With Smart Waste Practices.</h1>
+          <p class="fade-in" style="transition-delay: 0.4s;">Get the knowledge, and support you need to build a zero-waste
+            future.</p>
+          <a href="#" class="btn fade-in" style="transition-delay: 0.6s;">Explore Resources</a>
+        </div>
+      </section>
+      
+      <section class="resource-info-section fade-in">
+        <div class="resource-container">
+            <div class="resource-text fade-in">
+                <h2 class="typing-">Empowering You with Waste Management Knowledge</h2>
+                <p style="transition-delay: 0.2s;">
+                    Gain clear, practical insights into waste management guidelines specific to each Indian state. Our platform is designed to educate individuals, communities, and organizations on proper waste disposal practices, environmental compliance, and sustainable living. Whether you're a student, homeowner, business, or activist, you’ll find valuable, easy-to-understand resources to help you make informed, eco-friendly choices and stay aligned with local regulations.
+                </p>
+                <a href="#" class="resource-btn fade-in">Explore Resources</a>
+            </div>
+            <div class="resource-image fade-in">
+                <img src="https://img.freepik.com/free-photo/beach-cleanup-volunteer-with-recycle-bin-save-earth-campaign_53876-127125.jpg?t=st=1746286471~exp=1746290071~hmac=427f619c2a2be9bca00bdc74b12987b658578a71652c5588efd125198b865f52&w=1380" alt="People Recycling" />
+            </div>
+        </div>
+    </section>
+    
+<div class="state">
+    <section class="explore-intro">
+        <h2>Explore Statewide Resources</h2>
+        <p>
+          Discover essential waste management guidelines, initiatives, and agencies across all 28 Indian states. 
+          This section helps you navigate localized strategies, responsibilities, and services implemented by each state government. 
+          Stay informed, stay responsible, and make a positive environmental impact by learning about your state's efforts. 
+          Click on any state card below to get started!
+        </p>
+      </section>
+      <section class="state-search-container fade-in">
+        <input
+          type="text"
+          id="stateSearch"
+          placeholder="Search for a state..."
+          class="state-search-input"
+        />
+        <button id="searchBtn" class="state-search-btn">Search</button>
+        <!-- <p id="noResultMsg" style="text-align:center; color:red; display:none; font-weight:bold;">
+            No state found. Please try again.
+          </p> -->
+      </section>
+      
+      
+    <div class="slider-container fade-in">
+        <div class="card-slider fade-in" id="cardSlider">
+            <div class="card"><img src="https://plus.unsplash.com/premium_photo-1694475122158-5c088fe408ea?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Andhra Pradesh"><div class="card-body"><span class="tag">Andhra Pradesh</span><h3>Smart Collection Zones</h3><p>Tech-enabled bins in smart cities.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1626761627604-f27d98885f4b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arunachal Pradesh"><div class="card-body"><span class="tag">Arunachal Pradesh</span><h3>Bio Waste Projects</h3><p>Focus on biodegradable waste in hilly terrain.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1602020277972-fd160de66021?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Assam"><div class="card-body"><span class="tag">Assam</span><h3>Riverbank Cleanup</h3><p>Cleaning Brahmaputra banks from plastic waste.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1622194993926-1801586d460f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bihar"><div class="card-body"><span class="tag">Bihar</span><h3>Plastic Ban Drives</h3><p>Enforcing plastic ban in markets.</p></div></div>
+            <div class="card"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/44/c5/49/chitrakoot-falls.jpg?w=1800&h=1000&s=1" alt="Chhattisgarh"><div class="card-body"><span class="tag">Chhattisgarh</span><h3>Composting Hubs</h3><p>Decentralized organic waste composting.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Goa"><div class="card-body"><span class="tag">Goa</span><h3>Beach Waste Reduction</h3><p>Reducing tourist-generated litter.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1620103142897-e759080cd49d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gujarat"><div class="card-body"><span class="tag">Gujarat</span><h3>Industrial Waste Monitoring</h3><p>Regulating industrial discharge zones.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1605469237567-a39930679526?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haryana"><div class="card-body"><span class="tag">Haryana</span><h3>Village Cleanups</h3><p>Engaging panchayats in waste awareness.</p></div></div>
+            <div class="card"><img src="https://plus.unsplash.com/premium_photo-1697729690458-2d64ca777c04?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himachal Pradesh"><div class="card-body"><span class="tag">Himachal Pradesh</span><h3>Eco Waste Trails</h3><p>Eco-tourism zones waste segregation.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1619500765355-8ba767d6e261?q=80&w=3097&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jharkhand"><div class="card-body"><span class="tag">Jharkhand</span><h3>Mining Site Cleanup</h3><p>Managing waste near mining regions.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1606141836992-bfcb00c776c2?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Karnataka"><div class="card-body"><span class="tag">Karnataka</span><h3>Smart Bin Systems</h3><p>Real-time tracking of bin capacity.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kerala"><div class="card-body"><span class="tag">Kerala</span><h3>Green Protocol</h3><p>Ban on disposables in public functions.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1638814175187-b7fbc1a1e46e?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Madhya Pradesh"><div class="card-body"><span class="tag">Madhya Pradesh</span><h3>Bio-Gas Conversion</h3><p>Organic waste to energy efforts.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1521206644285-8db1549e484f?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Maharashtra"><div class="card-body"><span class="tag">Maharashtra</span><h3>Urban Waste Zones</h3><p>Strict segregation in urban homes.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1587635861480-414767bd0198?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Manipur"><div class="card-body"><span class="tag">Manipur</span><h3>Rural Awareness Drives</h3><p>Door-to-door awareness programs.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1521437620269-f477f5437820?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meghalaya"><div class="card-body"><span class="tag">Meghalaya</span><h3>Landfill Alternatives</h3><p>Eco-friendly dumping methods.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1629406989647-ed5e7e39e721?q=80&w=3128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mizoram"><div class="card-body"><span class="tag">Mizoram</span><h3>Organic First Policy</h3><p>Community composting projects.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1635998973462-1bdda50a13df?q=80&w=3129&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nagaland"><div class="card-body"><span class="tag">Nagaland</span><h3>Waste Barter</h3><p>Exchanging waste for daily goods.</p></div></div>
+            <div class="card"><img src="https://plus.unsplash.com/premium_photo-1694475133441-bbca84f93082?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Odisha"><div class="card-body"><span class="tag">Odisha</span><h3>Slum Area Sanitation</h3><p>Improving hygiene in urban slums.</p></div></div>
+            <div class="card"><img src="https://plus.unsplash.com/premium_photo-1697730324062-c012bc98eb13?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Punjab"><div class="card-body"><span class="tag">Punjab</span><h3>Farm Waste Solutions</h3><p>Converting stubble to compost.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rajasthan"><div class="card-body"><span class="tag">Rajasthan</span><h3>Dry Waste Markets</h3><p></p>
+                romoting dry waste segregation and resale.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1600402808924-9c591a6dace8?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sikkim"><div class="card-body"><span class="tag">Sikkim</span><h3>Plastic-Free State</h3><p>Early leader in banning plastic bags.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1599679400256-d4781a10bf2b?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tamil Nadu"><div class="card-body"><span class="tag">Tamil Nadu</span><h3>Smart Parks</h3><p>Waste-free zones in public parks.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1623682242746-285312daf926?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Telangana"><div class="card-body"><span class="tag">Telangana</span><h3>Recycling Innovation</h3><p>Startups converting waste to wealth.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1701407369440-b8c0232707fb?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tripura"><div class="card-body"><span class="tag">Tripura</span><h3>Waste Audit Campaigns</h3><p>Household waste analysis programs.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1627938823193-fd13c1c867dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Uttar Pradesh"><div class="card-body"><span class="tag">Uttar Pradesh</span><h3>Segregation Awareness</h3><p>Ward-level waste segregation campaigns.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1601821139990-9fc929db79ce?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Uttarakhand"><div class="card-body"><span class="tag">Uttarakhand</span><h3>Hill Waste Solutions</h3><p>Transporting waste from hilly terrain.</p></div></div>
+            <div class="card"><img src="https://images.unsplash.com/photo-1571679654681-ba01b9e1e117?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG0dby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="West Bengal"><div class="card-body"><span class="tag">West Bengal</span><h3>Canal Waste Management</h3><p>Focus on keeping canals waste-free.</p></div></div>
+        </div>
+    </div>
+</div>
+<section class="our-mission fade-in">
+    <h2 class="section-heading">Our Mission</h2>
+    <p class="section-text">
+        Our mission is to drive awareness, responsibility, and positive action for sustainable waste management across India. 
+        We envision a nation where individuals and communities actively participate in reducing, reusing, and recycling waste—empowered by education and supported by local solutions. 
+        By promoting eco-conscious habits, facilitating access to reliable information, and encouraging innovation, we aim to create a cleaner and healthier environment for current and future generations.
+    </p>
+</section>
 
-<!-- HERO SECTION WITH BACKGROUND IMAGE AND CENTERED TEXT -->
-<section class="hero-section fade-in">
-    <div class="hero-container">
-        <div class="hero-text fade-in">
-            <h1>Waste management guides.</h1>
-            <p style="transition-delay: 0.4s;">
-                Explore state-specific waste management guidelines across India. Access key regulations, tips, and
-                best practices to stay compliant and support a cleaner environment—ideal for residents, businesses,
-                and learners alike.
-            </p>
-            <a href="#" class="guide-btn fade-in">Explore Resources</a>
+<section class="faq-section fade-in">
+    <h2 class="section-heading">Still got questions?</h2>
+    <p class="section-text">
+        Here you will find answers to a lot of questions.<br />
+        Your question is not listed? Head over to our <a href="#">support forum</a>.
+    </p>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">What is waste management?</button>
+            <div class="faq-answer">
+                <p>It involves the collection, transportation, recycling, and disposal of waste to reduce its impact on health and the environment.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Why is waste segregation important?</button>
+            <div class="faq-answer">
+                <p>It ensures effective recycling, reduces landfill waste, and prevents harmful contamination of resources.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">How can I reduce plastic usage?</button>
+            <div class="faq-answer">
+                <p>Use cloth bags, metal straws, reusable bottles, and avoid products with excessive plastic packaging.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What are the types of waste?</button>
+            <div class="faq-answer">
+                <p>Common types include biodegradable, non-biodegradable, recyclable, and hazardous waste.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I compost at home?</button>
+            <div class="faq-answer">
+                <p>Yes, composting kitchen waste like peels, tea leaves, and leftovers helps create nutrient-rich soil naturally.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">What happens if waste is not managed?</button>
+            <div class="faq-answer">
+                <p>Poor waste management leads to pollution, disease outbreaks, and long-term environmental damage.</p>
+            </div>
         </div>
     </div>
 </section>
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>WasteWise</h3>
+        <p>123 Eco Street<br>Sustainable City, Green State<br>India</p>
+      </div>
+      <div class="footer-column">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#">Waste Management</a></li>
+          <li><a href="#">Recycling Services</a></li>
+          <li><a href="#">Composting</a></li>
+          <li><a href="#">E-Waste Disposal</a></li>
+          <li><a href="#">Plastic Alternatives</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul class="footer-links">
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Join us</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 WasteWise | All rights reserved</p>
+    </div>
+  </footer>
 
-<!-- RESOURCE DESCRIPTION SECTION WITH LEFT-ALIGNED TEXT AND IMAGE TO THE RIGHT-->
- 
-<section class="resource-info-section fade-in">
-  <div class="resource-container">
-    <div class="resource-text fade-in">
-      <h2>Your resource for state regulations</h2>
-      <p style="transition-delay: 0.2s;">
-        Discover comprehensive waste management guidelines tailored for each state in India. Our platform provides you with easy access to essential regulations, practices, and tips to ensure responsible waste disposal and management in your area. Stay informed and compliant with local laws while contributing to a cleaner environment. Whether you're a resident, business owner, or simply looking to educate yourself, our guidelines offer valuable insights for everyone.
-      </p>
-      <a href="#" class="resource-btn fade-in">Explore Resources</a>
-    </div>
-    <div class="resource-image fade-in">
-      <img src="https://img.freepik.com/free-vector/flat-design-people-recycling-illustration_23-2148525856.jpg?t=st=1746041444~exp=1746045044~hmac=312089de9db63d218dd594410d3e89c64b834e8518b4aeb9bc09fd7dded24815&w=1380" alt="People Recycling" />
-    </div>
-  </div>
-</section>
 
-<!-- State-specific waste management guidelines -->
-<div class="slider-container fade-in">
-    <h1 class="fade-in" style="text-align:center; margin-bottom: 50px;">Waste Management Guidelines</h1>
-    <button class="arrow left" id="prevBtn">&#8592;</button>
-    <div class="card-slider fade-in" id="cardSlider">
-        <!-- 28 States with unique names and content -->
-        <div class="card"><img src="https://plus.unsplash.com/premium_photo-1694475122158-5c088fe408ea?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Andhra Pradesh"><div class="card-body"><span class="tag">Andhra Pradesh</span><h3>Smart Collection Zones</h3><p>Tech-enabled bins in smart cities.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1626761627604-f27d98885f4b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Arunachal Pradesh"><div class="card-body"><span class="tag">Arunachal Pradesh</span><h3>Bio Waste Projects</h3><p>Focus on biodegradable waste in hilly terrain.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1602020277972-fd160de66021?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Assam"><div class="card-body"><span class="tag">Assam</span><h3>Riverbank Cleanup</h3><p>Cleaning Brahmaputra banks from plastic waste.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1622194993926-1801586d460f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bihar"><div class="card-body"><span class="tag">Bihar</span><h3>Plastic Ban Drives</h3><p>Enforcing plastic ban in markets.</p></div></div>
-        <div class="card"><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/44/c5/49/chitrakoot-falls.jpg?w=1800&h=1000&s=1" alt="Chhattisgarh"><div class="card-body"><span class="tag">Chhattisgarh</span><h3>Composting Hubs</h3><p>Decentralized organic waste composting.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Goa"><div class="card-body"><span class="tag">Goa</span><h3>Beach Waste Reduction</h3><p>Reducing tourist-generated litter.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1620103142897-e759080cd49d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Gujarat"><div class="card-body"><span class="tag">Gujarat</span><h3>Industrial Waste Monitoring</h3><p>Regulating industrial discharge zones.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1605469237567-a39930679526?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Haryana"><div class="card-body"><span class="tag">Haryana</span><h3>Village Cleanups</h3><p>Engaging panchayats in waste awareness.</p></div></div>
-        <div class="card"><img src="https://plus.unsplash.com/premium_photo-1697729690458-2d64ca777c04?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Himachal Pradesh"><div class="card-body"><span class="tag">Himachal Pradesh</span><h3>Eco Waste Trails</h3><p>Eco-tourism zones waste segregation.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1619500765355-8ba767d6e261?q=80&w=3097&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Jharkhand"><div class="card-body"><span class="tag">Jharkhand</span><h3>Mining Site Cleanup</h3><p>Managing waste near mining regions.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1606141836992-bfcb00c776c2?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Karnataka"><div class="card-body"><span class="tag">Karnataka</span><h3>Smart Bin Systems</h3><p>Real-time tracking of bin capacity.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kerala"><div class="card-body"><span class="tag">Kerala</span><h3>Green Protocol</h3><p>Ban on disposables in public functions.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1638814175187-b7fbc1a1e46e?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Madhya Pradesh"><div class="card-body"><span class="tag">Madhya Pradesh</span><h3>Bio-Gas Conversion</h3><p>Organic waste to energy efforts.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1521206644285-8db1549e484f?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Maharashtra"><div class="card-body"><span class="tag">Maharashtra</span><h3>Urban Waste Zones</h3><p>Strict segregation in urban homes.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1587635861480-414767bd0198?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Manipur"><div class="card-body"><span class="tag">Manipur</span><h3>Rural Awareness Drives</h3><p>Door-to-door awareness programs.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1521437620269-f477f5437820?q=80&w=3173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Meghalaya"><div class="card-body"><span class="tag">Meghalaya</span><h3>Landfill Alternatives</h3><p>Eco-friendly dumping methods.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1629406989647-ed5e7e39e721?q=80&w=3128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mizoram"><div class="card-body"><span class="tag">Mizoram</span><h3>Organic First Policy</h3><p>Community composting projects.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1635998973462-1bdda50a13df?q=80&w=3129&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nagaland"><div class="card-body"><span class="tag">Nagaland</span><h3>Waste Barter</h3><p>Exchanging waste for daily goods.</p></div></div>
-        <div class="card"><img src="https://plus.unsplash.com/premium_photo-1694475133441-bbca84f93082?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Odisha"><div class="card-body"><span class="tag">Odisha</span><h3>Slum Area Sanitation</h3><p>Improving hygiene in urban slums.</p></div></div>
-        <div class="card"><img src="https://plus.unsplash.com/premium_photo-1697730324062-c012bc98eb13?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Punjab"><div class="card-body"><span class="tag">Punjab</span><h3>Farm Waste Solutions</h3><p>Converting stubble to compost.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Rajasthan"><div class="card-body"><span class="tag">Rajasthan</span><h3>Dry Waste Markets</h3><p>Promoting dry waste segregation and resale.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1600402808924-9c591a6dace8?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sikkim"><div class="card-body"><span class="tag">Sikkim</span><h3>Plastic-Free State</h3><p>Early leader in banning plastic bags.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1599679400256-d4781a10bf2b?q=80&w=2952&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tamil Nadu"><div class="card-body"><span class="tag">Tamil Nadu</span><h3>Smart Parks</h3><p>Waste-free zones in public parks.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1623682242746-285312daf926?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Telangana"><div class="card-body"><span class="tag">Telangana</span><h3>Recycling Innovation</h3><p>Startups converting waste to wealth.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1701407369440-b8c0232707fb?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tripura"><div class="card-body"><span class="tag">Tripura</span><h3>Waste Audit Campaigns</h3><p>Household waste analysis programs.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1627938823193-fd13c1c867dd?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Uttar Pradesh"><div class="card-body"><span class="tag">Uttar Pradesh</span><h3>Segregation Awareness</h3><p>Ward-level waste segregation campaigns.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1601821139990-9fc929db79ce?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Uttarakhand"><div class="card-body"><span class="tag">Uttarakhand</span><h3>Hill Waste Solutions</h3><p>Transporting waste from hilly terrain.</p></div></div>
-        <div class="card"><img src="https://images.unsplash.com/photo-1571679654681-ba01b9e1e117?q=80&w=3174&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="West Bengal"><div class="card-body"><span class="tag">West Bengal</span><h3>Canal Waste Management</h3><p>Focus on keeping canals waste-free.</p></div></div>
-    </div>
-    <button class="arrow right" id="nextBtn">&#8594;</button>
-</div>
+
 
     <script src="Script/guidelines.js"></script>
 </body>
