@@ -641,64 +641,182 @@
         transform: translateY(0); 
     }
 }
-/* footer section */
-.footer {
-    background-color: #0062cc;
-    color: white;
-    padding: 60px 40px 20px;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+  .global-guidelines {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
   }
   
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding-left: 110px;
+  .global-guidelines h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0062cc;
   }
   
-  .footer-column {
-    flex: 1;
-    min-width: 200px;
+  .global-guidelines p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
   }
   
-  .footer-column h3,
-  .footer-column h4 {
-    margin-bottom: 15px;
+  .global-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
   }
   
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
+  .global-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
   }
   
-  .footer-column ul li {
+  .global-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .global-card h3 {
+    color: #1a4d4a;
     margin-bottom: 10px;
   }
   
-  .footer-column ul li a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s;
-  }
   
-  .footer-column ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  .social-icons a {
-    margin-right: 10px;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-  }
-  
-  .footer-bottom {
+  /* Updated Success Stories Grid - Horizontal Cards */
+.success-stories {
+    background-color: #f9fbff;
+    padding: 60px 20px;
     text-align: center;
-    margin-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    padding-top: 10px;
-    font-size: 14px;
   }
   
+  .stories-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .story-card {
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  .story-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .story-card img {
+    width: 220px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+  
+  .story-content {
+    text-align: left;
+    flex: 1;
+  }
+  
+  .story-content h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #0062cc;
+  }
+  
+  .story-content p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+
+ /* footer section */
+ .footer {
+  background-color: #0062cc;
+  color: white;
+  padding: 60px 40px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-left: 110px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  font-size: 14px;
+}
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #0062cc; /* Green theme */
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: white;
+  border: 2px solid #0062cc;
+  color: #0062cc;
+  transform: scale(1.05);
+}

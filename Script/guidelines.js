@@ -87,5 +87,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+  const buttons = document.querySelectorAll('.tab-button');
+  const contents = document.querySelectorAll('.tab-content');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      buttons.forEach(btn => btn.classList.remove('active'));
+      contents.forEach(content => content.style.display = 'none');
+
+      button.classList.add('active');
+      document.getElementById(button.dataset.tab).style.display = 'block';
+    });
+  });
+
+
+
 
 // updateSlider(); // initial state // Removed

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WasteWise</title>
+  <link rel="stylesheet" href="Styles/contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <header class="topbar fade-in">
+    <div class="logo">WasteWise</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="fade-in" style="transition-delay: 0.1s;">Home</a></li>
+        <li><a href="guidelines.html" class="fade-in" style="transition-delay: 0.2s;">Guidelines</a></li>
+        <li><a href="resources.html" class="fade-in" style="transition-delay: 0.3s;">Resources</a></li>
+        <li><a href="agencies.html" class="fade-in" style="transition-delay: 0.4s;">Agencies</a></li>
+        <li><a href="#" class="fade-in" style="transition-delay: 0.5s;">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p class="contact-description">
+      Have questions or want to get in touch? We’d love to hear from you! Reach out via the contact form, email, phone, or follow us on social media for updates.
+    </p>
+  
+    <!-- Contact Form -->
+    <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-button">Send Message</button>
+      <p id="form-feedback" class="feedback-message"></p> <!-- Feedback message -->
+    </form>
+  
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> contact@wastewise.com</p>
+    </div>
+  
+    <!-- Social Media Links -->
+    <div class="social-media">
+      <a href="https://www.facebook.com/WasteWise" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+      <a href="https://twitter.com/WasteWise" target="_blank">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+      <a href="https://www.linkedin.com/company/wastewise" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+  
+    <!-- Office Address -->
+    <div class="office-address">
+      <p><strong>Our Office:</strong></p>
+      <p>123 Waste Management Street, Eco City, EC 12345</p>
+    </div>
+  
+    <!-- Google Maps Embed -->
+    <div class="google-maps">
+      <h3>Find Us Here:</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>WasteWise</h3>
+        <p>123 Eco Street<br>Sustainable City, Green State<br>India</p>
+      </div>
+      <div class="footer-column">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#">Waste Management</a></li>
+          <li><a href="#">Recycling Services</a></li>
+          <li><a href="#">Composting</a></li>
+          <li><a href="#">E-Waste Disposal</a></li>
+          <li><a href="#">Plastic Alternatives</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <ul class="footer-links">
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Join us</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 WasteWise | All rights reserved</p>
+    </div>
+  </footer>
+  <!-- JavaScript for form submission -->
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevents the default form submission behavior
+      // Optionally, you could handle form data here, like sending it to a server
+  
+      // After form submission, redirect to the confirmation page
+      window.location.href = "confirm.html";
+    }
+  </script>
+  
+  
+</body>
+</html>
