@@ -16,23 +16,19 @@
   :root {
     --scroll-animation-delay: 0.1s;
   }
-  
-.topbar {
+  .topbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 16px 40px;
-    background-color: #0062cc;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    justify-content: space-between;
+    height: 60px; /* Set a fixed height */
+    padding: 6px 40px;
+    background-color: #0062cc; /* or your desired background */
   }
   
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
+  .logo img {
+    height: 100px; /* Set a max height for logo image */
+    width: auto;
+    margin-left: 25px;
   }
   
   .navbar ul {
@@ -661,4 +657,14 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 10px;
   font-size: 14px;
+}
+@keyframes fadeIn {
+  from { 
+      opacity: 0; 
+      transform: translateY(10px); 
+  }
+  to { 
+      opacity: 1; 
+      transform: translateY(0); 
+  }
 }

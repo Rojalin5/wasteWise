@@ -23,15 +23,19 @@ body {
 /* topbar */
 .topbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 16px 40px;
-    background-color: #0062cc;
-    color: white;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
+    justify-content: space-between;
+    height: 60px; /* Set a fixed height */
+    padding: 6px 40px;
+    background-color: #0062cc; /* or your desired background */
+  }
+  
+  .logo img {
+    height: 100px; /* Set a max height for logo image */
+    width: auto;
+    margin-left: 25px;
+  }
+  
 
 .logo {
     font-size: 24px;
