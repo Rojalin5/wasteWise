@@ -23,6 +23,9 @@
     height: 60px; /* Set a fixed height */
     padding: 6px 40px;
     background-color: #0062cc; /* or your desired background */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   
   .logo img {
