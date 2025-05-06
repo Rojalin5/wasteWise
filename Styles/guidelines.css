@@ -170,7 +170,6 @@
     overflow-x: auto;
     overflow-y: hidden;
     background-color: #eef2ff;
-    padding: 20px 0;
   }
   
   .card-slider {
@@ -468,7 +467,6 @@
     margin: 0 auto 40px;
     font-size: 1rem;
     line-height: 1.6;
-    color: #444;
   }
   
   .global-cards {
