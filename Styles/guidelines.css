@@ -1,9 +1,10 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
   body {
     font-family: 'Quicksand', sans-serif;
     min-height: 100vh;
@@ -63,23 +64,18 @@
   .navbar a:hover::after {
     width: 100%;
   }
-  
-  .hero-section-redesigned {
-    background-color: white;
-    padding: 30px 20px;
-  }
-  
-  .hero-container-redesigned {
+  .hero {
+    height: 70vh;
+    color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  .hero-container-redesigned::after {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Make sure hero content is layered above overlay */
+}
+
+.hero::after {
     content: '';
     position: absolute;
     top: 0;
@@ -87,53 +83,27 @@
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
-  }
-  
-  .hero-image-container {
-    max-width: 50%;
-  }
-  
-  .hero-image-container img {
-    display: block;
-    max-width: 90%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .hero-text {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .hero-text h1 {
-    font-size: 48px;
+    z-index: -1; /* Push overlay behind the content */
+}
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 45px;
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .hero-text p {
-    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 20px;
     margin-bottom: 30px;
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  .guide-btn {
-    background-color: #0062cc;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-  }
-  
-  .guide-btn:hover {
-    background-color: #0056b3;
-  }
-  
+}
+
   .resource-info-section {
     background-color: white;
     color: #333;
@@ -268,10 +238,6 @@
     color: #555;
   }
   
-  .arrow {
-    display: none;
-  }
-  
   .fade-in {
     opacity: 0;
     transform: translateY(50px);
@@ -303,46 +269,6 @@
     line-height: 1.6;
   }
   
-  .hero {
-    height: 70vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-  
-  .hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: -1;
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .hero-content h1 {
-    font-size: 45px;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .hero-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
   
   .btn {
     background-color: #0062cc;
@@ -358,15 +284,6 @@
     background-color: #004bb5;
   }
   
-  .state {
-    background-color: #ecefff;
-  }
-  
-  .state-search-container {
-    text-align: center;
-    margin: 20px auto;
-  }
-  
   .state-search-input {
     padding: 10px;
     width: 250px;
@@ -397,76 +314,6 @@
     font-family: 'Quicksand', sans-serif;
   }
   
-  .section-heading {
-    font-size: 2.5rem;
-    display: inline-block;
-    margin-bottom: 20px;
-    font-weight: bold;
-    animation: slideIn 1s ease forwards;
-    font-family: 'Quicksand', sans-serif;
-  }
-  
-  .section-heading::after {
-    content: "";
-    display: block;
-    width: 60%;
-    margin: 10px auto 0;
-    height: 4px;
-    background-color: #0062cc;
-  }
-  .hero {
-    height: 70vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-    z-index: 1; /* Make sure hero content is layered above overlay */
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: -1; /* Push overlay behind the content */
-}
-.hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 800px;
-    padding: 50px;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 45px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.hero-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.btn {
-    background-color: #0062cc;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #004bb5;
-}
 .state{
     background-color: #ecefff;
 }
@@ -475,35 +322,9 @@
     margin: 20px auto;
   }
   
-  .state-search-input {
-    padding: 10px;
-    width: 250px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin-right: 8px;
-  }
-  
-  .state-search-btn {
-    padding: 10px 16px;
-    font-size: 16px;
-    background-color:#0062cc;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
   .state-search-btn:hover {
     background-color: #004bb5;
   }
-  .our-mission {
-    padding: 60px 20px;
-    background-color: white;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-}
-
 /* Shared Styles */
 .section-heading {
     font-size: 2.5rem;
@@ -525,7 +346,6 @@
     border-radius: 2px;
     animation: expandLine 1s ease-in-out;
 }
-
 .section-text {
     max-width: 800px;
     margin: 0 auto;
@@ -536,16 +356,6 @@
     font-family: 'Quicksand', sans-serif;
     text-align: center;
 }
-
-/* Section Layouts */
-.our-mission,
-.faq-section {
-    padding: 60px 20px;
-    background-color: #ffffff;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-}
-
 /* FAQ Specific */
 .faq-container {
     max-width: 800px;
@@ -747,14 +557,12 @@
   background-color: #0062cc;
   color: white;
   padding: 60px 40px 20px;
-  font-family: Arial, sans-serif;
   font-size: 18px;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 30px;
   padding-left: 110px;
 }
